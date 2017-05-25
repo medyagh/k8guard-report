@@ -1,18 +1,13 @@
 package main
 
 import (
-	"github.com/k8guard/k8guard-report/db"
 	"github.com/k8guard/k8guard-report/templates"
 
-	libs "github.com/k8guard/k8guardlibs"
+	"github.com/k8guard/k8guard-report/db"
 )
 
 func main() {
 	templates.PopulateTemplates()
-	err := db.Connect(libs.Cfg.CassandraHosts)
-	if err != nil {
-		panic(err.Error())
-	}
-
+	db.InitDB()
 	start_http_router()
 }

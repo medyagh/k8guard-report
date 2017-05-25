@@ -18,6 +18,6 @@ import:
   version: 1f874493e9e5aebe46b312593cbd9cb5d3946eda
 
 - package: github.com/k8guard/k8guardlibs
-  repo: https://github.com/k8guard/k8guardlibs.git
-  version: 0558b3eafb02f616ee743b4ecfd93451ba2d33e1
+  version: dbrefactor
+  repo: https://github.com/medyagh/k8guardlibs.git
   vcs: git
